@@ -1,118 +1,120 @@
 body {
-    font-family: "Montserrat", sans-serif;
-  
-   
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  #backwave{
-    background: url("./assets/wave.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1000px;;
-  }
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    font-size: 48px;
-    color: #00b7ff;
-  }
-  
-  /* .my-brand {
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+#backwave {
+  background: url("./assets/wave.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #00b7ff;
+}
+.about {
+  background: url("./assets/wave2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .my-brand {
     color:#4534aa;
     font-weight:800;
     font-family: "Montserrat", sans-serif;
   } */
-  .sub-heading {
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 300;
-  }
-  
-  .container-fluid {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .b-text {
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 300;
-    color: #6c757d;
-  }
-  
-  
-  #navbar-my {
-    padding: 5% 11%;
-    /* padding-top: 1%; */
-    margin-top: -150px;
-  }
-  
-  .navbar {
-    padding: 0.5rem 0rem;
-    font-weight: 300;
-  }
-  
-  .navbar-btn {
-    background: #fff;
-    color: #00b7ff;
-    border: none;
-    padding: 8px 18px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    border-radius: 16px;
-    font-weight: 600;
-  }
-  
-  .navbar-btn:hover {
-    background: #00c3ff;
-    color: #fff;
-  }
-  #main {
-    padding: 10% 15%;
-    padding-top: 0%;
-    padding-left: 10%;
-    padding-bottom: 5%;
-  }
-  
-  .btn-explore {
-    color: #00b7ff;
-    border: 1px solid #1dcaff;
-  }
-  
-  .btn-explore:hover {
-    color: rgb(255, 255, 255);
-    background: #00aeff;
-  }
-  
+.sub-heading {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.b-text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+#navbar-my {
+  padding: 5% 11%;
+  /* padding-top: 1%; */
+  margin-top: -150px;
+}
+
+.navbar {
+  padding: 0.5rem 0rem;
+  font-weight: 300;
+}
+
+.navbar-btn {
+  background: #fff;
+  color: #00b7ff;
+  border: none;
+  padding: 8px 18px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.navbar-btn:hover {
+  background: #00c3ff;
+  color: #fff;
+}
+#main {
+  padding: 10% 15%;
+  padding-top: 0%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+}
+
+.btn-explore {
+  color: #00b7ff;
+  border: 1px solid #1dcaff;
+}
+
+.btn-explore:hover {
+  color: rgb(255, 255, 255);
+  background: #00aeff;
+}
+
 .card {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0px solid transparent;
-    border-radius: 0px
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0px solid transparent;
+  border-radius: 0px;
 }
 
 .card-body {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: .5rem
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0.5rem;
 }
 
 .card .card-title {
-    position: relative;
-    font-weight: 600;
-    margin-bottom: 10px
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-
