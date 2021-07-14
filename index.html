@@ -24,17 +24,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-    <!-- My CSS Sheets -->
-    <link rel="stylesheet" href="main.css">
-    <!-- My JS Sheets -->
+    <script src="https://kit.fontawesome.com/f0d8464a51.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+        
+
+    <!-- My CSS Sheets -->
+    <link rel="stylesheet" href="main.css">
+    <!-- My JS Sheets -->
     <script src="index.js"></script>
 </head>
 
@@ -45,7 +46,7 @@
                 <div class="container-fluid">
                     <div class="navbar-brand">
                         <!-- <a class="navbar-brand" style="color:#ffffff" href="#">Charity Road</a> -->
-                        <img class="navbar-brand" src="assets/Logo.png" alt="Logo" style="height: min-content;">
+                        <img id="logo" src="assets/Logo.png" alt="Logo" style="height: min-content;">
                     </div>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -55,17 +56,17 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" style="color:rgb(0, 195, 255)"
-                                    href="#home"><button type="button"
-                                        class="btn btn-outline-primary navbar-btn">HOME</button></a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" style="color:rgb(0, 195, 255)" href="#donate"><button type="button"
-                                        class="btn btn-outline-primary navbar-btn">Donate</button></a>
+                                        class="btn btn-outline-primary navbar-btn">DONATE</button></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" style="color:rgb(0, 195, 255)" href="#about-us"><button
                                         type="button" class="btn btn-outline-primary navbar-btn">ABOUT US</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color:rgb(0, 195, 255)"
+                                    href="#precautions"><button type="button"
+                                        class="btn btn-outline-primary navbar-btn">PRECAUTIONS</button></a>
                             </li>
 
                         </ul>
@@ -85,23 +86,23 @@
                                 <h1 style="color:#ffffff;">COVID HEALTHCARE FUNDS</h1>
                                 <p class="text-justify text-white font-weight-bold">Welcome to Charity Road a Way to
                                     Help the Needy One's. Donate for a Noble Cause</p>
-                                <!-- <form>
-                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                                        data-payment_button_id="pl_HTfXf04EwTFbay" async> </script>
-                                </form> -->
-                                <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_HYNB9mDP9fvcTm/view" data-text="Donate Now" data-color="#528FF0" data-size="medium">
+                                <div class="razorpay-embed-btn rp-1"
+                                    data-url="https://pages.razorpay.com/pl_HYNB9mDP9fvcTm/view" data-text="Donate Now"
+                                    data-color="#00BFFF" data-size="medium">
                                     <script>
-                                      (function(){
-                                        var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
-                                        if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
-                                        s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
-                                        rzp && rzp.init && rzp.init()}})();
+                                        (function () {
+                                            var d = document; var x = !d.getElementById('razorpay-embed-btn-js')
+                                            if (x) {
+                                                var s = d.createElement('script'); s.defer = !0; s.id = 'razorpay-embed-btn-js';
+                                                s.src = 'https://cdn.razorpay.com/static/embed_btn/bundle.js'; d.body.appendChild(s);
+                                            } else {
+                                                var rzp = window['__rzp__'];
+                                                rzp && rzp.init && rzp.init()
+                                            }
+                                        })();
                                     </script>
-                                  </div>
-                                      
-                                      
-                                <!-- <a href="/users"> <button type="button"
-                                        class="btn btn-lg btn-outline-primary btn-explore mt-3">Explore</button></a> -->
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -120,26 +121,31 @@
     </section>
 
     <!-- About Us -->
-    <section class="about">
-        <div class="container mt-lg-5">
 
-            <div class="container card shadow p-5 m-5">
+    <section class="about">
+        <div class="container">
+            <div class="container card shadow p-5">
                 <div id="donate">
                     <h1 class="text-center">DONATE NOW</h1>
                     <div class="container justify-content-center align-items-center d-flex">
-                        <!-- <form>
-                            <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                                data-payment_button_id="pl_HTfXf04EwTFbay" async> </script>
-                        </form> -->
-                        <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_HYNB9mDP9fvcTm/view" data-text="Donate Now" data-color="#528FF0" data-size="medium">
+                        <div class="razorpay-embed-btn rp-2"
+                            data-url="https://pages.razorpay.com/pl_HYNB9mDP9fvcTm/view" data-text="Donate Now"
+                            data-color="#00BFFF" data-size="medium">
                             <script>
-                              (function(){
-                                var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
-                                if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
-                                s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
-                                rzp && rzp.init && rzp.init()}})();
+                                (function () {
+                                    var d = document; var x = !d.getElementById('razorpay-embed-btn-js')
+                                    if (x) {
+                                        var s = d.createElement('script'); s.defer = !0; s.id = 'razorpay-embed-btn-js';
+                                        s.src = 'https://cdn.razorpay.com/static/embed_btn/bundle.js'; d.body.appendChild(s);
+                                    } else {
+                                        var rzp = window['__rzp__'];
+                                        rzp && rzp.init && rzp.init()
+                                    }
+                                })();
                             </script>
-                          </div>
+                        </div>
+
+
                     </div>
                     <img src="assets/covid2.svg" alt="Covid Help">
                     Keeping in mind the need for having a dedicated national fund with the primary objective of dealing
@@ -176,9 +182,37 @@
                 </div>
 
             </div>
-
         </div>
     </section>
+
+    <!-- Precautions -->
+
+    <div id="precautions">
+        <h1 class="text-center my-5">PRECAUTIONS</h1>
+        <div class="container justify-content-center align-items-center d-flex">
+            <div class="col-lg-6 col-md-7 col-sm-12  my-auto">
+                <div class="row">
+                    <div class="col pl-5">
+                        <img src="assets/covid3.svg" alt="Covid Help" style="width:100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="conatiner p-lg-5">
+            <ul>
+                <li><i class="fab fa-facebook-square"></i> FaceBook</li>
+                <li><i class="fab fa-twitter"></i> Twitter</li>
+                <li><i class="fab fa-linkedin-in"></i> Linkedin</li>
+            </ul>
+            <h4 class="text-center">The Charity Road Foundation &copy; 2021 TSF </h4>
+        </div>
+        
+    </footer>
 </body>
 
 </html>

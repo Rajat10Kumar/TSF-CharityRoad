@@ -9,13 +9,18 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 1000px;
+  height: 1200px;
+  width: 100%;
 }
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 48px;
   color: #00b7ff;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
 }
 .about {
   background: url("./assets/wave2.svg");
@@ -117,4 +122,58 @@ h1 {
   position: relative;
   font-weight: 600;
   margin-bottom: 10px;
+}
+footer {
+  background: url("./assets/svg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer > div > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  font-weight: 700;
+  padding: 10rem;
+}
+footer > div > ul > li {
+  margin: 0 20px;
+}
+footer > div > ul > li:hover {
+  color: rgb(0, 183, 255);
+}
+footer > div > h4 {
+  color: #fff;
+  font-weight: 800;
+}
+@media (max-width: 450px) {
+  section > section > nav > div {
+    display: grid;
+  }
+  section > section > nav > div > div > img {
+    width: 270px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
+  footer > div > ul > li {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
+  footer > div > h4 {
+    font-size: 1rem;
+  }
+  .rp-1 {
+    margin: 50px;
+  }
+  .rp-2 {
+    margin: 30px;
+  }
 }

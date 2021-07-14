@@ -4,3 +4,6 @@ document
 document
   .getElementById("donate")
   .scrollTo({ behavior: "smooth", top: 0, block: "start", inline: "nearest" });
+document
+  .getElementById("precautions")
+  .scrollTo({ behavior: "smooth", top: 0, block: "start", inline: "nearest" });
