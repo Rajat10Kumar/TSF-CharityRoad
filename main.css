@@ -123,7 +123,7 @@ h4 {
   font-weight: 600;
   margin-bottom: 10px;
 }
-footer {
+footer#footer-bg {
   background: url("./assets/svg.png");
   background-size: cover;
   background-repeat: no-repeat;
