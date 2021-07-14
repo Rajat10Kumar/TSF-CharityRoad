@@ -123,13 +123,13 @@ h4 {
   font-weight: 600;
   margin-bottom: 10px;
 }
-footer#footer-bg {
+section.bg {
   background: url("./assets/svg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-footer > div > ul {
+section > div > ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -142,13 +142,13 @@ footer > div > ul {
   font-weight: 700;
   padding: 10rem;
 }
-footer > div > ul > li {
+section > div > ul > li {
   margin: 0 20px;
 }
-footer > div > ul > li:hover {
+section > div > ul > li:hover {
   color: rgb(0, 183, 255);
 }
-footer > div > h4 {
+section > div > h4 {
   color: #fff;
   font-weight: 800;
 }
@@ -162,12 +162,12 @@ footer > div > h4 {
     margin-bottom: -30px;
     margin-left: -30px;
   }
-  footer > div > ul > li {
+  section > div > ul > li {
     color: #fff;
     font-size: 0.9rem;
     margin-top: 50px;
   }
-  footer > div > h4 {
+  section > div > h4 {
     font-size: 1rem;
   }
   .rp-1 {
